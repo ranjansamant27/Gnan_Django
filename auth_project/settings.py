@@ -94,6 +94,15 @@ DATABASES = {
 }
 
 
+SESSION_COOKIE_SECURE = False      
+CSRF_COOKIE_SECURE = False         
+CSRF_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SAMESITE = 'Lax'
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
